@@ -10,6 +10,7 @@ copyright = "&copy; Copyright 2025 Fatih Koçer"
 
 [params.author]
     name = "Fatih Koçer"
+    avatar = "lara.jpg"
     github = "fksvs"
     gitlab = "fksvs"
     linkedin = "fatihkocerc"
