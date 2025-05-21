@@ -2,11 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fatih Koçer</title>
-    <link>http://localhost:1313/projects/</link>
+    <link>http://localhost:33129/projects/</link>
     <description>Recent content on Fatih Koçer</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Copyright 2025 Fatih Koçer</copyright>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 May 2025 15:41:16 +0300</lastBuildDate>
+    <atom:link href="http://localhost:33129/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Translates</title>
+      <link>http://localhost:33129/projects/translates/</link>
+      <pubDate>Wed, 21 May 2025 15:41:16 +0300</pubDate>
+      <guid>http://localhost:33129/projects/translates/</guid>
+      <description>&lt;p&gt;Below is an overview of the materials I’ve translated into Turkish.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Software Projects</title>
+      <link>http://localhost:33129/projects/software-projects/</link>
+      <pubDate>Wed, 21 May 2025 15:41:10 +0300</pubDate>
+      <guid>http://localhost:33129/projects/software-projects/</guid>
+      <description>&lt;p&gt;Below is a list of software projects I’ve created, each with its name and a brief description:&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

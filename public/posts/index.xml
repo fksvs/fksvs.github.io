@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fatih Koçer</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:33129/posts/</link>
     <description>Recent content on Fatih Koçer</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>&amp;copy; Copyright 2025 Fatih Koçer</copyright>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33129/posts/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

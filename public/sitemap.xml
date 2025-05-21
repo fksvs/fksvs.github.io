@@ -2,18 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:33129/projects/</loc>
+    <lastmod>2025-05-21T15:41:16+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/archives/</loc>
+    <loc>http://localhost:33129/categories/</loc>
+    <lastmod>2025-05-21T15:41:16+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:33129/</loc>
+    <lastmod>2025-05-21T15:41:16+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:33129/categories/translates/</loc>
+    <lastmod>2025-05-21T15:41:16+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:33129/projects/translates/</loc>
+    <lastmod>2025-05-21T15:41:16+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:33129/projects/software-projects/</loc>
+    <lastmod>2025-05-21T15:41:10+03:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:33129/categories/software-projects/</loc>
+    <lastmod>2025-05-21T15:41:10+03:00</lastmod>
+  </url><url>
+    <loc>http://localhost:33129/about/</loc>
+  </url><url>
+    <loc>http://localhost:33129/archives/</loc>
+  </url><url>
+    <loc>http://localhost:33129/posts/</loc>
+  </url><url>
+    <loc>http://localhost:33129/tags/</loc>
   </url>
 </urlset>
