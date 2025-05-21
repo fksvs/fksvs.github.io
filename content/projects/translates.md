@@ -1,12 +1,11 @@
 +++
 date = '2025-05-21T15:41:16+03:00'
-draft = true
 title = 'Translates'
 description = 'Translates I Made'
 categories = ['translates']
 +++
 
-Below is an overview of the materials I’ve translated into Turkish.
+Below is an overview of the materials I’ve translated into Turkish:
 <!--more-->
 
 # Man pages

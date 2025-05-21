@@ -1,6 +1,5 @@
 +++
 date = '2025-05-21T15:41:10+03:00'
-draft = true
 title = 'Software Projects'
 description = 'Software Projects I Made'
 categories = ['software-projects']
