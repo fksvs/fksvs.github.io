@@ -1,0 +1,36 @@
+{{- if .Site.Params.showShareIcons | default true }}
+<ul class="article-share">
+  <!-- Sharingbutton Facebook -->
+  <li>
+    <a class="resp-sharing-button__link" href="{{ replace (.Permalink | absURL) "%" "%25" | printf "https://facebook.com/sharer/sharer.php?u=%s" | safeURL }}" target="_blank" rel="noopener" aria-label="Facebook">
+      <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <i class="fa-brands fa-facebook-f"></i></div>Facebook</div>
+    </a>
+  </li>
+
+  <!-- Sharingbutton Twitter -->
+  <!-- <li>
+    <a class="resp-sharing-button__link" href="{{ printf "https://twitter.com/intent/tweet/?text=%s - %s&url=%s" (.Title | safeURL) (.Site.Title | safeURL) (replace (.Permalink | absURL) "%" "%25") | safeURL }}" target="_blank" rel="noopener" aria-label="Twitter">
+      <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <i class="fa-brands fa-twitter"></i></div>Twitter</div>
+    </a>
+  </li> -->
+
+  <!-- Sharingbutton X -->
+  <li>
+    <a class="resp-sharing-button__link" href="{{ printf "https://x.com/intent/tweet/?text=%s - %s&url=%s" (.Title | safeURL) (.Site.Title | safeURL) (replace (.Permalink | absURL) "%" "%25") | safeURL }}" target="_blank" rel="noopener" aria-label="Twitter">
+      <div class="resp-sharing-button resp-sharing-button--x resp-sharing-button--medium"><i class="fa-brands fa-x-twitter"></i></div>
+    </a>
+  </li>
+
+  <!-- Sharingbutton Bluesky -->
+  <!-- <li>
+    <a class="resp-sharing-button__link" href="{{ printf "https://bsky.app/intent/compose?text=%s - %s %s" (.Title | safeURL) (.Site.Title | safeURL) (replace (.Permalink | absURL) "%" "%25") | safeURL }}" target="_blank" rel="noopener" aria-label="Bluesky">
+      <div class="resp-sharing-button resp-sharing-button--bluesky resp-sharing-button--medium"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+        <i class="fa-brands fa-bluesky"></i></div>Bluesky</div>
+    </a>
+  </li> -->
+ 
+</ul>
+
+{{- end }}
