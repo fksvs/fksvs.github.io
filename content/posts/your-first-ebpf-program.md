@@ -5,10 +5,9 @@ description = 'Your First eBPF Program'
 categories = ['ebpf', 'linux']
 +++
 
+If this is your first time working with eBPF, I strongly recommend reading [What is eBPF](https://ebpf.io/what-is-ebpf/) or [Introduction to eBPF first](https://fksvs.github.io/posts/introduction-to-ebpf/) first. Once you've got the basics, check out [Setting up eBPF Development Environment](https://fksvs.github.io/posts/setting-up-ebpf-dev-env/) to get your tools ready.
 
-If this is your first time with interacting eBPF, I strongly suggest you to read [What is eBPF](https://ebpf.io/what-is-ebpf/) or [Introduction to eBPF first](https://fksvs.github.io/posts/introduction-to-ebpf/). After that, you can read [Setting up eBPF Development Environment](https://fksvs.github.io/posts/setting-up-ebpf-dev-env/) and start your eBPF journey.
-
-In this article, we are going to learn what tracepoints are, how tracepoints works, development process of a eBPF project, writing eBPF program and loading it with different techniques. Tighten you seatbelts, we are going into a very technical trip. 
+In this article, we are going to learn what tracepoints are, how tracepoints works, writing an eBPF program and loading it with `bpftool`. Buckle up, we're going on a technical ride into the kernel.
 <!--more-->
 
 ## What is Tracepoint
