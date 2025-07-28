@@ -5,6 +5,11 @@ languageCode = 'en'
 
 copyright = "&copy; Copyright 2025 Fatih Koçer"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
     showShareIcons = false
 
