@@ -16,3 +16,4 @@ Below is a list of software projects I’ve created, each with its name and a br
 - [cloglib](https://github.com/fksvs/cloglib) – cloglib is a small, easy-to-use, fast C/C++ logging library.
 - [fmemt](https://github.com/fksvs/fmemt) – fmemt is a dynamic memory tracker for monitoring heap usage and detecting leaks.
 - [games](https://github.com/fksvs/games) – a collection of small games I made for fun.
+- [fisilti](https://github.com/fksvs/fisilti) - Fisilti is a secure, ephemeral secret sharing platform.
