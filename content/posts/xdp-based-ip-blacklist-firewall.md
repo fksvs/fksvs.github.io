@@ -43,7 +43,7 @@ This is the same logic used in routing tables and fits naturally with firewall p
 
 ## Architecture Overview
 
-<p align="center"> <img src="/images/siper-architecture.png" width="300" alt="Siper Firewall Architecture"><br> <em>Siper Firewall Architecture</em> </p>
+<p align="center"> <img src="/images/siper-architecture.png" width="700" alt="Siper Firewall Architecture"><br> <em>Siper Firewall Architecture</em> </p>
 
 The architecture is intentionally split into control plane and data plane to keep packet processing fast while allowing flexible policy management.
 
