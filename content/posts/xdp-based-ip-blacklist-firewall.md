@@ -43,6 +43,8 @@ This is the same logic used in routing tables and fits naturally with firewall p
 
 ## Architecture Overview
 
+<p align="center"> <img src="/images/siper-architecture.png" width="300" alt="Siper Firewall Architecture"><br> <em>Siper Firewall Architecture</em> </p>
+
 The architecture is intentionally split into control plane and data plane to keep packet processing fast while allowing flexible policy management.
 
 In user space, a JSON-based blacklist is managed through the Siper CLI with `add` and `del` commands. These commands update the blacklist file, while the `run` command loads and attaches the XDP program and then populates a pinned LPM trie eBPF map named `ipv4_lpm_map`. This pinned map is the “live policy” in the kernel and can be updated at runtime without reloading the XDP program.
