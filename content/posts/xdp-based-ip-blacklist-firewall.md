@@ -5,8 +5,8 @@ description = 'XDP Based IP Blacklist Firewall'
 categories = ['xdp', 'network', 'ebpf', 'linux']
 +++
 
-IP blacklist firewalls exist to solve a very old and very practical problem: known bad traffic should not consume system resources. In most real environments, a large <!--more--> portion of unwanted traffic originates from repeat offenders. These sources are often identifiable by IP address or network range and tend to reappear.
-
+IP blacklist firewalls exist to solve a very old and very practical problem: known bad traffic should not consume system resources. In most real environments, a large portion of unwanted traffic originates from repeat offenders. These sources are often identifiable by IP address or network range and tend to reappear.
+<!--more-->
 The idea behind an IP blacklist firewall is actually very simple:  if the source is already known to be malicious, there is no reason to let its packets travel deeper into our system.
 
 This approach does not aim to detect new attacks or analyze payloads. Its goal is early rejection, reducing noise and protecting downstream components.
