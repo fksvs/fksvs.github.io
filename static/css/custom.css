@@ -9,7 +9,8 @@
   --border: #ddd;
   --shadow: #eee;
   --quote-border: #ccc;
-  --toggle-label: "Dark mode";
+  --moon-display: block;
+  --sun-display: none;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,7 +24,8 @@
     --border: #444;
     --shadow: #111;
     --quote-border: #555;
-  --toggle-label: "Light mode";
+    --moon-display: none;
+    --sun-display: block;
   }
 }
 
@@ -37,7 +39,8 @@
   --border: #444;
   --shadow: #111;
   --quote-border: #555;
-  --toggle-label: "Light mode";
+  --moon-display: none;
+  --sun-display: block;
 }
 
 body { background: var(--bg); color: var(--fg); }
@@ -54,18 +57,28 @@ blockquote { background: var(--code-bg); border-left-color: var(--quote-border);
 table thead th { border-bottom-color: var(--border); }
 thead, tfoot, tr:nth-child(even) { background: var(--muted-bg); }
 
-/* Links and the toggle share one box model so they render at the same size. */
-.menu a, #theme-toggle {
+.menu a {
   display: inline-block;
   font: inherit;
   line-height: 1.5;
   padding: 5px 8px;
-  border: 0;
   border-radius: 5px;
   background: var(--muted-bg);
 }
-#theme-toggle { color: var(--link); cursor: pointer; }
-#theme-toggle::before { content: var(--toggle-label); }
+
+/* Icon-only toggle: shows the moon in light mode, the sun in dark mode. */
+#theme-toggle {
+  display: flex;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  background: none;
+  color: var(--fg);
+  cursor: pointer;
+}
+#theme-toggle:hover { background: var(--muted-bg); }
+#theme-toggle .icon-moon { display: var(--moon-display); }
+#theme-toggle .icon-sun { display: var(--sun-display); }
 
 /* Site name (first menu entry) on the left, the rest on the right. */
 .menu {
