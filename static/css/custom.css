@@ -95,3 +95,25 @@ thead, tfoot, tr:nth-child(even) { background: var(--muted-bg); }
   font-size: 1.3em;
   font-weight: bold;
 }
+
+/* Phones: site name and toggle on the top row, links on the row below. */
+@media (max-width: 520px) {
+  /* Full-width empty flex item that forces the links onto their own row. */
+  .menu::before {
+    content: "";
+    flex-basis: 100%;
+    order: 2;
+  }
+  .menu li { order: 3; }
+  .menu li:first-child { order: 0; }
+  .menu li:last-child { order: 1; }
+
+  /* Bigger tap target; the negative margin keeps the icon on the right edge. */
+  #theme-toggle {
+    padding: 8px;
+    margin-right: -8px;
+  }
+
+  .article-meta h1 { font-size: 1.5em; }
+  .article-meta h2 { font-size: 1.1em; }
+}
