@@ -1,12 +1,13 @@
 +++
 date = '2025-06-12T20:44:52+03:00'
+draft = false
 title = 'Setting Up eBPF Development Environment'
 description = 'Setting Up eBPF Development Environment'
-categories = ['ebpf', 'linux']
+categories = ['Tech']
+tags = ['ebpf', 'linux']
 +++
 
 Before writing any eBPF programs, it’s essential to set up a proper development environment. Equally important is understanding the overall eBPF workflow, from writing and compiling your eBPF code to loading it into the kernel and inspecting its output.
-<!--more-->
 
 ## eBPF Development Workflow
 

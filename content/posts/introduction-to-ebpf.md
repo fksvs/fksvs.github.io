@@ -1,11 +1,15 @@
 +++
 date = '2025-05-29T12:09:46+03:00'
+draft = false
 title = 'Introduction to eBPF'
 description = 'A brief introduction into eBPF'
-categories = ['ebpf', 'linux']
+categories = ['Tech']
+tags = ['ebpf', 'linux']
 +++
 
-eBPF (extended Berkeley Packet Filter) is a modern Linux kernel feature that lets you safely plug in small, sandboxed programs to extend or observe system behavior without modifying or reconfiguring the kernel or applications.<!--more-->Think of it as a flexible add-on platform: you write a tiny piece of code (an eBPF program), load it at runtime into various hooks (more on hooks later), and instantly gain powerful tracing, networking, or security capabilities. This approach leaves your core system unchanged while opening up new ways to monitor and enhance both kernel and application functionality.
+## What is eBPF ?
+
+eBPF (extended Berkeley Packet Filter) is a modern Linux kernel feature that lets you safely plug in small, sandboxed programs to extend or observe system behavior without modifying or reconfiguring the kernel or applications. Think of it as a flexible add-on platform: you write a tiny piece of code (an eBPF program), load it at runtime into various hooks (more on hooks later), and instantly gain powerful tracing, networking, or security capabilities. This approach leaves your core system unchanged while opening up new ways to monitor and enhance both kernel and application functionality.
 
 ## Why Use eBPF ?
 

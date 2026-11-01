@@ -1,12 +1,16 @@
 +++
 date = '2026-02-08T20:21:30+01:00'
+draft = false
 title = 'XDP Based IP Blacklist Firewall'
 description = 'XDP Based IP Blacklist Firewall'
-categories = ['xdp', 'network', 'ebpf', 'linux']
+categories = ['Tech']
+tags = ['xdp', 'network', 'ebpf', 'linux']
 +++
 
+## Why IP Blacklist Firewalls Exists
+
 IP blacklist firewalls exist to solve a very old and very practical problem: known bad traffic should not consume system resources. In most real environments, a large portion of unwanted traffic originates from repeat offenders. These sources are often identifiable by IP address or network range and tend to reappear.
-<!--more-->
+
 The idea behind an IP blacklist firewall is actually very simple:  if the source is already known to be malicious, there is no reason to let its packets travel deeper into our system.
 
 This approach does not aim to detect new attacks or analyze payloads. Its goal is early rejection, reducing noise and protecting downstream components.
@@ -42,8 +46,6 @@ The LPM trie allows storing CIDR prefixes (e.g. `/32`, `/24`, `/16`), performing
 This is the same logic used in routing tables and fits naturally with firewall policies that need to block both individual hosts and entire subnets.
 
 ## Architecture Overview
-
-<p align="center"> <img src="/images/siper-architecture.png" width="700" alt="Siper Firewall Architecture"><br> <em>Siper Firewall Architecture</em> </p>
 
 The architecture is intentionally split into control plane and data plane to keep packet processing fast while allowing flexible policy management.
 
@@ -163,7 +165,7 @@ struct {
 } metrics_map SEC(".maps");
 ```
 
-### **Packet flow and processing**
+## **Packet flow and processing**
 
 1. A network packet arrives at the interface and is handed to the network driver.
 2. The attached XDP program runs before the packet enters the Linux networking stack.

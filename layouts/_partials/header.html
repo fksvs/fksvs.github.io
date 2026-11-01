@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />
+    {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      {{ $page := . }}
+      {{ range .Site.Menus.main }}
+      {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (and $page.IsHome (eq .Identifier "posts")) }}
+      <li><a href="{{ .URL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a></li>
+      {{ end }}
+      <li><button id="theme-toggle" type="button" aria-label="Switch between light and dark mode"></button></li>
+    </ul>
+    <hr/>
+    </nav>

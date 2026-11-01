@@ -1,9 +1,7 @@
-baseURL = "https://fksvs.github.io/"
-title = "Fatih Koçer"
-theme = "whiteplain"
-languageCode = 'en'
-
-copyright = "&copy; Copyright 2025 Fatih Koçer"
+baseURL = 'https://fksvs.github.io/'
+locale = 'en-us'
+title = 'Fatih Koçer'
+theme = 'hugo-xmin'
 
 [markup]
   [markup.goldmark]
@@ -21,32 +19,39 @@ copyright = "&copy; Copyright 2025 Fatih Koçer"
     linkedin = "fatihkocerc"
     reddit = "fksvsc"
 
+# Defining [taxonomies] replaces Hugo's defaults, so tags must be listed
+# explicitly alongside categories.
+# https://gohugo.io/content-management/taxonomies/#default-taxonomies
 [taxonomies]
     category = "categories"
+    tag = "tags"
 
-[[menu.main]]
-    name = "Categories"
-    identifier = "categories"
-    url = "/categories/"
+# pageRef (instead of url) lets Hugo resolve the page and mark the active item.
+# https://gohugo.io/content-management/menus/#define-in-site-configuration
+# First entry is the site name; custom.css pushes it to the left of the menu.
+[[menus.main]]
+    name = "Fatih Koçer"
+    pageRef = "/"
     weight = 1
-[[menu.main]]
-    name = "Archives"
-    identifier = "archives"
-    url = "/archives/"
+[[menus.main]]
+    name = "Posts"
+    identifier = "posts"
+    pageRef = "/posts"
     weight = 2
-[[menu.main]]
-    name = "Projects"
-    identifier = "projects"
-    url = "/projects/"
+[[menus.main]]
+    name = "Categories"
+    pageRef = "/categories"
     weight = 3
-[[menu.main]]
-    name = "About"
-    identifier = "about"
-    url = "/about/"
+[[menus.main]]
+    name = "Tags"
+    pageRef = "/tags"
     weight = 4
-
-[[menu.footer]]
+[[menus.main]]
     name = "About"
-    identifier = "about"
-    url = "/about/"
+    pageRef = "/about"
+    weight = 5
+
+[[menus.footer]]
+    name = "About"
+    pageRef = "/about"
     weight = 1

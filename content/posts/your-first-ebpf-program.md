@@ -1,14 +1,15 @@
 +++
 date = '2025-07-20T18:19:49+03:00'
+draft = false
 title = 'Your First eBPF Program'
 description = 'Your First eBPF Program'
-categories = ['ebpf', 'linux']
+categories = ['Tech']
+tags = ['ebpf', 'linux']
 +++
 
 If this is your first time working with eBPF, I strongly recommend reading [What is eBPF](https://ebpf.io/what-is-ebpf/) or [Introduction to eBPF first](https://fksvs.github.io/posts/introduction-to-ebpf/) first. Once you've got the basics, check out [Setting up eBPF Development Environment](https://fksvs.github.io/posts/setting-up-ebpf-dev-env/) to get your tools ready.
 
 In this article, we are going to learn what tracepoints are, how tracepoints works, writing an eBPF program and loading it with `bpftool`. Buckle up, we're going on a technical ride into the kernel.
-<!--more-->
 
 ## What is Tracepoint
 
