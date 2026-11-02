@@ -2,12 +2,10 @@
 date = '2026-11-01T19:48:34+03:00'
 draft = false
 title = 'The Workout System - Part 1'
-description = 'Workout system I use to improve myself'
+description = 'Upper Day'
 categories = ['fitness']
 tags = ['workout-program']
 +++
-
-# Upper Body
 
 First things first: this article is not for beginners. An upper/lower split can absolutely work for a beginner, but this particular program assumes you already know your way around the gym, understand your limits, and have built a decent base of strength. We are going to train hard. Really fucking hard. But there's a difference between pushing your body and beating it up for no reason.
 
